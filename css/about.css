@@ -1,0 +1,179 @@
+/* About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .about-image img {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+  
+  .about-text p {
+    margin-bottom: 15px;
+  }
+  
+  /* Vision & Mission Section */
+  .vm-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .vm-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+  }
+  
+  .vm-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .vm-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+  }
+  
+  .vm-icon i {
+    font-size: 36px;
+    color: var(--primary-color);
+  }
+  
+  .vm-box h2 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+  }
+  
+  /* Core Values Section */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .value-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .value-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: white;
+  }
+  
+  .value-icon i {
+    font-size: 30px;
+  }
+  
+  .value-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+  }
+  
+  /* Team Section */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .member-info h3 {
+    margin-bottom: 5px;
+    color: var(--dark-color);
+  }
+  
+  .position {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 991px) {
+    .about-text h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-content,
+    .vm-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-image {
+      order: -1;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .vm-box {
+      padding: 30px;
+    }
+  
+    .vm-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .vm-icon i {
+      font-size: 28px;
+    }
+  }
+  
